@@ -16,8 +16,8 @@ public class SearchQ6SmallestLetter {
     static char search(char[] a, char t){
         int start = 0;
         int end = a.length-1;
-        while(start <= end){
-            int mid = start+(end-start)/2;
+        while(start<=end){
+            int mid = start + (end-start)/2;
             if (t < a[mid]){
                 end = mid-1;
             }else {
