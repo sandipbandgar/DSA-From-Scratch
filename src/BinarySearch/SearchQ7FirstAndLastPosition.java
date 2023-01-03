@@ -16,10 +16,10 @@ public class SearchQ7FirstAndLastPosition {
     }
     static int[] search(int[] a, int t){
             int[] ans = {-1,-1};
-            int start = search(a,t,true);
-            int end = search(a,t,false);
-            ans[0]=start;
-            ans[1]=end;
+            ans[0] = search(a,t,true);
+            if(ans[0] != -1) {
+                ans[1] = search(a, t, false);
+            }
             return ans;
     }
     static int search(int[] a, int t, boolean findStartIndex){

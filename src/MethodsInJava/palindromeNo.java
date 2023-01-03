@@ -15,12 +15,12 @@ public class palindromeNo {
     }
     static boolean palindrome(int a){
         int x = a;
-        int sum =0;
-        while (a > 0){
-            int z = a % 10;
-            a = a/10;
-            sum = sum * 10 + z;
+        int sum=0;
+        while(a > 0){
+            int l = a%10;
+            a  = a/10;
+            sum = sum*10+l;
         }
-        return sum == x;
+        return x == sum;
     }
 }
